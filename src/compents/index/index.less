@@ -1,0 +1,197 @@
+@width: 100%;
+.index-banner img{
+    width: @width;
+}
+.index-wrap{
+    background-color: #fff;
+}
+.service-list{
+
+    .list{
+        display: flex;
+        li{
+            width: 33.3333%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 98px;
+                height: 98px;
+                margin-top: 30px;
+            }
+            p{
+                margin: 10px 0 20px 0;
+                font-size: 24px;
+            }
+        }
+    }
+}
+.leval{
+    height: 10px;
+    background-color: #fff5f9;
+}
+.waiter-recommend{
+
+    .title-content{
+        height: 90px;
+        box-sizing: border-box;
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+
+        .waiter-recommend-text{
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .waiter-more{
+            display: flex;
+            align-items: center;
+            color: #5a6877;
+        }
+        .arrow-right{
+            display: inline-block;
+            border-top: 1px solid #5a6877;
+            border-right: 1px solid #5a6877;
+            width: 15px;
+            height: 15px;
+            transform: rotate(45deg);
+            margin-left: 8px;
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.waiter-list{
+    overflow: auto;
+    .list{
+        display: inline-flex;
+        padding-bottom: 30px;
+        padding-top: 15px;
+        overflow-x: scroll;
+        li{
+            box-sizing: border-box;
+            padding: 30px 40px 10px;
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: -3px 0px 12px 5px #f7f7f7;
+            margin-left: 30px;
+            border-radius: 20px;
+            img{
+                width: 160px;
+                height: 160px;
+                border-radius:50%;
+            }
+            .pink-leval{
+                width: 60px;
+                height: 4px;
+                background-color: #ff85a9;
+                margin: 14px 0;
+            }
+            .waiter-name{
+                padding-top: 10px;
+            }
+        }
+    }
+}
+.waiter-list::-webkit-scrollbar {
+    display: none;
+}
+.waiter-last{
+    margin-right: 30px!important;
+}
+.waiter-name{
+    font-size: 28px;
+}
+.evaluate-title{
+    height: 90px;
+    box-sizing: border-box;
+    padding: 0 30px;
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    line-height: 90px;
+}
+.evaluate-content{
+    box-shadow: -3px 0px 12px 5px #f7f7f7;
+    border-radius: 15px;
+}
+.evaluate-wrap{
+    box-sizing: border-box;
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+.evaluate-item{
+    box-sizing: border-box;
+    padding: 20px;
+}
+.evaluate-header{
+    display: flex;
+}
+.user-header{
+    margin-right: 30px;
+}
+.user-header img{
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+}
+.user-name{
+    font-size: 28px;
+}
+.star-wrap img{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.user-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.star-num{
+    display: flex;
+    justify-content: space-between;
+}
+.evaluate_time{
+    font-size:28px ;
+    color: #afb8c2;
+}
+.evaluate-text{
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 36px;
+}
+.evaluate-img{
+    padding-bottom: 15px;
+}
+.evaluate-img img{
+    width: 148px;
+    height: 114px;
+    border-radius: 15px;
+    margin-right: 40px;
+}
+.waiter-info{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    .waiter-header{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 40px;
+    }
+    .waiter-name{
+        font-size: 24px;
+        margin-right: 94px;
+    }
+    .waiter-price{
+        font-size: 24px;
+    }
+}
