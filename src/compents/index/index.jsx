@@ -19,6 +19,10 @@ class Index extends Component {
         var {history} = this.context.router
         if (index === 0){
             history.push('/waiterservice')
+        }else if (index ===1){
+            history.push('/fuchong')
+        }else if (index ===2){
+            history.push('/service')
         }
     }
     render() {

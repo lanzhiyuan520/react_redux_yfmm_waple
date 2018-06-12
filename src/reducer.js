@@ -90,7 +90,36 @@ function WaiterService(state,action){
             return state
     }
 }
+function ServiceBaozhang(state,action){
+    switch (action.type){
+        case 'HELLO':
+            return{
 
+            }
+        default:
+            return state
+    }
+}
+function Service(state,action){
+    switch (action.type){
+        case 'HELLO':
+            return{
+
+            }
+        default:
+            return state
+    }
+}
+function Fuchong(state,action){
+    switch (action.type){
+        case 'HELLO':
+            return{
+
+            }
+        default:
+            return state
+    }
+}
 function reducer(state, action) {
     return {
         app: App(state.app, action),
@@ -99,6 +128,9 @@ function reducer(state, action) {
         youfu: Youfu(state.youfu, action),
         my: My(state.my, action),
         waiterService: WaiterService(state.WaiterService, action),
+        ServiceBaozhang: ServiceBaozhang(state.ServiceBaozhang, action),
+        service: Service(state.service, action),
+        Fuchong: Fuchong(state.Fuchong, action)
     }
 }
 

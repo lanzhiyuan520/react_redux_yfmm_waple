@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from "react-redux";
 import './waiterService.less'
 import Header from '../header/header'
+import Service from '../serviceBaozhang/serviceBaozhang'
 import { Carousel } from 'antd-mobile';
 
 class WaiterService extends Component {
@@ -98,7 +99,9 @@ class WaiterService extends Component {
                             }
                         </Carousel>
                     </div>
-                    <div className='sss'></div>
+                </div>
+                <div className='server-baozhang-wrap'>
+                    <Service title={true}/>
                 </div>
             </div>
         );
