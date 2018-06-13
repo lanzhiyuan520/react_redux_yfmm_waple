@@ -21,7 +21,7 @@ class Waiter extends Component {
                                             <img src={item.waiter_header} className='waiter-header'/>
                                             <p className='waiter-name'>{item.waiter_name}</p>
                                             <div className='waiter-userinfo'>
-                                                <span>{item.age}</span>
+                                                <span>{item.age}岁</span>
                                                 <span>{item.address}</span>
                                                 <span>{item.good}好评</span>
                                             </div>

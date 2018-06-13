@@ -367,7 +367,28 @@ var initState = {
 
     },
     Fuchong:{
-
+        five_project:[
+            {
+                img:'http://cdn.ayi800.com/image/png/wx_waple_service_five_item1%E7%A6%8F%E5%AE%A0%E5%A5%97%E9%A4%90_03.png',
+                text:'营养师指导'
+            },
+            {
+                img:'http://cdn.ayi800.com/image/png/wx_waple_service_five_item3%E6%9C%88%E5%AD%90%E6%9C%8D%E5%8A%A12@2x.png',
+                text:'护士上门'
+            },
+            {
+                img:'http://cdn.ayi800.com/image/png/wx_waple_service_five_item4%E6%9C%88%E5%AD%90%E6%9C%8D%E5%8A%A13@2x.png',
+                text:'中医调理'
+            },
+            {
+                img:'http://cdn.ayi800.com/image/png/wx_waple_service_five_item5%E6%9C%88%E5%AD%90%E6%9C%8D%E5%8A%A14@2x.png',
+                text:'母乳指导'
+            },
+            {
+                img:'http://cdn.ayi800.com/image/png/wx_waple_service_five_item6%E6%9C%88%E5%AD%90%E6%9C%8D%E5%8A%A15@2x.png',
+                text:'母婴护理'
+            }
+        ]
     }
 }
 
