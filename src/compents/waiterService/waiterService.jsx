@@ -39,7 +39,7 @@ class WaiterService extends Component {
                     <div className='service-flow-list'>
                         <ul className='list'>
                             {
-                                store.service_flow.map((item,index)=>{
+                                this.props.waiterService.service_flow.map((item,index)=>{
                                     return (
                                         <li key={index}>
                                             <div className='list-item'>

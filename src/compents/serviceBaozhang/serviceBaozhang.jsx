@@ -13,7 +13,7 @@ class ServiceBaozhang extends Component {
                 <div className='service-list'>
                     <ul className='list-item'>
                         {
-                            store.service_baozhang_item.map((item,index)=>{
+                            this.props.ServiceBaozhang.service_baozhang_item.map((item,index)=>{
                                 return (
                                     <li key={index}>
                                         <div className='service-img'>

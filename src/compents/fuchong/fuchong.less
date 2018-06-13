@@ -1,5 +1,6 @@
 .Service{
   background-color: #fff;
+  padding-bottom: 110px;
 }
 .fuchong-banner img{
   width: 100%;
@@ -44,5 +45,55 @@
   }
 }
 .five-first-item{
+  margin-left: 30px;
+}
+.item-wrap{
+  box-shadow:0 0 20px rgba(0,0,0,.1);
+  margin-top: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  .item-title{
+    font-size: 32px;
+    padding-left: 30px;
+    line-height: 80px;
+  }
+  .item-content{
+    font-size: 24px;
+    color: #abb0b6;
+    box-sizing: border-box;
+    padding: 0 30px 20px ;
+    line-height: 30px;
+  }
+  .item-list{
+    overflow-x: auto;
+    .item-list-wrap{
+      display: inline-flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      li{
+        margin-right: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+          width: 170px;
+          height: 135px;
+        }
+        p{
+          font-size:24px;
+          background:linear-gradient(to right,#ff6794,#ff8a6c);
+          -webkit-background-clip:text;
+          color:transparent;
+          margin-top: 10px;
+          white-space:nowrap;
+        }
+      }
+    }
+  }
+}
+.item-list::-webkit-scrollbar {
+  display: none;
+}
+.first-project{
   margin-left: 30px;
 }

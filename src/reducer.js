@@ -120,6 +120,41 @@ function Fuchong(state,action){
             return state
     }
 }
+function Consult(state,action){
+    switch (action.type){
+        case 'CHANGE_USER_NAME':
+            return{
+                ...state,
+                name : action.name
+            }
+        case 'CHANGE_PHONE':
+            return {
+                ...state,
+                phone_order : action.phone_order
+            }
+        case 'SHOW_MEDEL':
+            return {
+                ...state,
+                offset : action.offset
+            }
+        case 'HIDE_MODEL':
+            return{
+                ...state,
+                offset:action.offset,
+                name : '',
+                phone_order :''
+            }
+        case 'CLEAN_VAL':
+            return{
+                ...state,
+                name:'',
+                phone_order : '',
+                offset:100
+            }
+        default:
+            return state
+    }
+}
 function reducer(state, action) {
     return {
         app: App(state.app, action),
@@ -130,7 +165,8 @@ function reducer(state, action) {
         waiterService: WaiterService(state.WaiterService, action),
         ServiceBaozhang: ServiceBaozhang(state.ServiceBaozhang, action),
         service: Service(state.service, action),
-        Fuchong: Fuchong(state.Fuchong, action)
+        Fuchong: Fuchong(state.Fuchong, action),
+        consult: Consult(state.consult, action)
     }
 }
 
