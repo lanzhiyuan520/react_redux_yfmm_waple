@@ -7,6 +7,7 @@ import Waiter from './compents/waiter/waiter'
 import WaiterService from './compents/waiterService/waiterService'
 import Service from './compents/service/service'
 import Fuchong from './compents/fuchong/fuchong'
+import WaiterDetail from './compents/waiterdetail/waiterdetail'
 //redux
 import { createStore, applyMiddleware } from 'redux'
 import { Provider, connect } from 'react-redux'
@@ -163,53 +164,53 @@ var initState = {
     waiter:{
         waiter_list:[
             {
-                waiter_header:'http://cdn.ayi800.com/image/17934abb02a2257a8672b2ce820f5769.jpg',
-                waiter_name:'张应梅',age:'42',address:'湖北省',good:"7",
+                head:'http://cdn.ayi800.com/image/17934abb02a2257a8672b2ce820f5769.jpg',
+                name:'张应梅',age:'42',address:'湖北省',good:"7",
                 tags:['月子餐','产后操','缠腹带']
             },
             {
-                waiter_header:'http://cdn.ayi800.com/image/3418a34f62664c29d518390552d321f9.jpg',
-                waiter_name:'高亚宁',age:'47',address:'甘肃省',good:"1",
+                head:'http://cdn.ayi800.com/image/3418a34f62664c29d518390552d321f9.jpg',
+                name:'高亚宁',age:'47',address:'甘肃省',good:"1",
                 tags:['月子餐','营养配餐']
             },
             {
-                waiter_header:'http://cdn.ayi800.com/image/2e69e7eeb19c935bfdb24d942bf07213.jpg',
-                waiter_name:'侯灵珍',age:'39',address:'山西省',good:"5",
+                head:'http://cdn.ayi800.com/image/2e69e7eeb19c935bfdb24d942bf07213.jpg',
+                name:'侯灵珍',age:'39',address:'山西省',good:"5",
                 tags:['月子餐','产后操','缠腹带']
             },
             {
-                waiter_header:'http://cdn.ayi800.com/image/da3173870aff0db1a4c5fddaacc56fbf.jpg',
-                waiter_name:'王晶',age:'45',address:'黑龙江省',good:"2",
+                head:'http://cdn.ayi800.com/image/da3173870aff0db1a4c5fddaacc56fbf.jpg',
+                name:'王晶',age:'45',address:'黑龙江省',good:"2",
                 tags:['月子餐','产后操','缠腹带']
             },
             {
-                waiter_header:'http://cdn.ayi800.com/image/eec6fcc16759ccde11a005083000d58e.JPG',
-                waiter_name:'杨德兰',age:'47',address:'河北省',good:"12",
+                head:'http://cdn.ayi800.com/image/eec6fcc16759ccde11a005083000d58e.JPG',
+                name:'杨德兰',age:'47',address:'河北省',good:"12",
                 tags:['月子餐','催乳通乳']
             },
             {
-                waiter_header:'http://cdn.ayi800.com/image/683ec75b06cffe3845f6c6d90f936df7.jpg',
-                waiter_name:'王卫华',age:'48',address:'河北省',good:"12",
+                head:'http://cdn.ayi800.com/image/683ec75b06cffe3845f6c6d90f936df7.jpg',
+                name:'王卫华',age:'48',address:'河北省',good:"12",
                 tags:['月子餐','产后操','催乳通乳']
             },
             {
-                waiter_header:'http://cdn.ayi800.com/image/d4866df2663deca133cc35f99c8778c1.jpg',
-                waiter_name:'张燕丽',age:'41',address:'山西省',good:"2",
+                head:'http://cdn.ayi800.com/image/d4866df2663deca133cc35f99c8778c1.jpg',
+                name:'张燕丽',age:'41',address:'山西省',good:"2",
                 tags:['月子餐','产后操','缠腹带']
             },
             {
-                waiter_header:'http://cdn.ayi800.com/image/8be58ade8c885200f74bd95f0c73e5de.jpg',
-                waiter_name:'王建敏',age:'46',address:'河北省',good:"8",
+                head:'http://cdn.ayi800.com/image/8be58ade8c885200f74bd95f0c73e5de.jpg',
+                name:'王建敏',age:'46',address:'河北省',good:"8",
                 tags:['月子餐','催乳通乳']
             },
             {
-                waiter_header:'http://cdn.ayi800.com/image/485a4d1d1c0156d31c23f7fcf420cd15.jpg',
-                waiter_name:'纪晓月',age:'32',address:'辽宁省',good:"5",
+                head:'http://cdn.ayi800.com/image/485a4d1d1c0156d31c23f7fcf420cd15.jpg',
+                name:'纪晓月',age:'32',address:'辽宁省',good:"5",
                 tags:['儿歌歌神','手巧','沟通能力强']
             },
             {
-                waiter_header:'http://cdn.ayi800.com/image/1aedf6b47bda6cccda6602c4fd2de4b5.jpg',
-                waiter_name:'陈月灵',age:'47',address:'安徽省',good:"2",
+                head:'http://cdn.ayi800.com/image/1aedf6b47bda6cccda6602c4fd2de4b5.jpg',
+                name:'陈月灵',age:'47',address:'安徽省',good:"2",
                 tags:['月子餐','产后操','缠腹带']
             },
         ]
@@ -510,6 +511,42 @@ var initState = {
         name:'',
         phone_order : '',
         offset:100
+    },
+    waiter_detail:{
+        certificate_list:[
+            {
+                img:'http://cdn.ayi800.com/wx_wap/baozhang_1.png',
+                text:'实名认证'
+            },
+            {
+                img:'http://cdn.ayi800.com/wx_wap/baozhang_2.png',
+                text:'母婴护理证'
+            },
+            {
+                img:'http://cdn.ayi800.com/wx_wap/baozhang_3.png',
+                text:'慈铭体检'
+            },
+            {
+                img:'http://cdn.ayi800.com/wx_wap/baozhang_4.png',
+                text:'无犯罪证明'
+            }
+        ],
+        work_img:[
+            'http://cdn.ayi800.com/image/275f71f74e0df3071630ca72901680fd.jpg',
+            'http://cdn.ayi800.com/image/956b4f5c23f31e90e1814386255c2e7b.jpg',
+            'http://cdn.ayi800.com/image/29d75540b5b36aab7d9ea019325fe45f.jpg',
+            'http://cdn.ayi800.com/image/67345c6f3d0a7a6aa52290e0ebc83c1c.jpg',
+            'http://cdn.ayi800.com/image/0b14be769720b91a3d971c44c0950610.jpg'
+        ],
+        tags_list:[
+            '催乳通乳',
+            '儿歌歌神',
+            '手巧',
+            '沟通能力强',
+            '干活麻利'
+        ],
+        show_evaluate_text : false,
+        show_evaluate_active : null,
     }
 }
 
@@ -526,6 +563,7 @@ const Routes = () => {
                     <Route path='/waiterservice' component={WaiterService}></Route>
                     <Route path='/service' component={Service}></Route>
                     <Route path='/fuchong' component={Fuchong}></Route>
+                    <Route path='/waiterdetail' component={WaiterDetail}></Route>
                 </Switch>
             </BrowserRouter>
         </Provider>

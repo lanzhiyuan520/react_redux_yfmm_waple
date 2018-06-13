@@ -155,6 +155,19 @@ function Consult(state,action){
             return state
     }
 }
+function Waiter_detail(state,action){
+    switch (action.type){
+        case 'SHOW_EVALUATE_D':
+            console.log('111',action)
+            return {
+                ...state,
+                show_evaluate_text : action.show,
+                show_evaluate_active : action.active
+            }
+        default:
+            return state
+    }
+}
 function reducer(state, action) {
     return {
         app: App(state.app, action),
@@ -166,7 +179,8 @@ function reducer(state, action) {
         ServiceBaozhang: ServiceBaozhang(state.ServiceBaozhang, action),
         service: Service(state.service, action),
         Fuchong: Fuchong(state.Fuchong, action),
-        consult: Consult(state.consult, action)
+        consult: Consult(state.consult, action),
+        waiter_detail: Waiter_detail(state.waiter_detail, action)
     }
 }
 

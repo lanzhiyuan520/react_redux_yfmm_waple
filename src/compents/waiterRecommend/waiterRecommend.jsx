@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import '../index/index.less'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 class WaiterRecommend extends Component {
+    static contextTypes = {
+        router: PropTypes.object
+    }
     componentDidMount(){
-        console.log(this.props)
+
+    }
+    waiter_detail(item){
+        var {history} = this.context.router
+        history.push({pathname:'/waiterdetail',data:item})
     }
     render() {
         var store = this.props.index
@@ -13,7 +21,7 @@ class WaiterRecommend extends Component {
                         {
                             this.props.waiter_recommend_list.map((item,index)=>{
                                 return (
-                                    <li key={index} className={index===store.waiter_recommend_list.length-1?'waiter-last':''}>
+                                    <li key={index} className={index===store.waiter_recommend_list.length-1?'waiter-last':''} onClick={()=>this.waiter_detail(item)}>
                                         <img src={item.head}/>
                                         <p className='waiter-name'>{item.name}</p>
                                         <div className='pink-leval'></div>
@@ -38,7 +46,6 @@ function mapDispatchToProps(dispatch) {
                 type: 'CHANGE_NAME'
             })
         },
-
     }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(WaiterRecommend);

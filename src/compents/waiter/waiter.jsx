@@ -18,8 +18,8 @@ class Waiter extends Component {
                                 return (
                                     <li key={index}>
                                         <div className='waiter-item'>
-                                            <img src={item.waiter_header} className='waiter-header'/>
-                                            <p className='waiter-name'>{item.waiter_name}</p>
+                                            <img src={item.head} className='waiter-header'/>
+                                            <p className='waiter-name'>{item.name}</p>
                                             <div className='waiter-userinfo'>
                                                 <span>{item.age}岁</span>
                                                 <span>{item.address}</span>
