@@ -175,7 +175,7 @@ function reducer(state, action) {
         waiter: Waiter(state.waiter,action),
         youfu: Youfu(state.youfu, action),
         my: My(state.my, action),
-        waiterService: WaiterService(state.WaiterService, action),
+        waiterService: WaiterService(state.waiterService, action),
         ServiceBaozhang: ServiceBaozhang(state.ServiceBaozhang, action),
         service: Service(state.service, action),
         Fuchong: Fuchong(state.Fuchong, action),

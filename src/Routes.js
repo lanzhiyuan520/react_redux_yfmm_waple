@@ -253,7 +253,7 @@ var initState = {
         phone_value : '',
         verification : ''
     },
-    WaiterService:{
+    waiterService:{
         service_flow:[
             {
                 img:'http://cdn.ayi800.com/image/png/wx_waple_service_flow1%E7%94%B5%E8%AF%9D@2x.png',

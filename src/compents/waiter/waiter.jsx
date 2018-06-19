@@ -6,6 +6,9 @@ class Waiter extends Component {
     componentDidMount(){
 
     }
+    waiter_detail(item){
+
+    }
     render() {
         var store = this.props.waiter
         return (
@@ -16,7 +19,7 @@ class Waiter extends Component {
                         {
                             store.waiter_list.map((item,index)=>{
                                 return (
-                                    <li key={index}>
+                                    <li key={index} onClick={item=>this.waiter_detail()}>
                                         <div className='waiter-item'>
                                             <img src={item.head} className='waiter-header'/>
                                             <p className='waiter-name'>{item.name}</p>
