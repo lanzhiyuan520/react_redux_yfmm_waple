@@ -2,12 +2,18 @@ import React, { Component } from 'react';
 import './waiter.less'
 import Header from '../header/header'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 class Waiter extends Component {
+    static contextTypes = {
+        router: PropTypes.object
+    }
     componentDidMount(){
 
     }
     waiter_detail(item){
-
+        var {history} = this.context.router
+        console.log(item)
+        history.push({pathname:'/waiterdetail',data:item})
     }
     render() {
         var store = this.props.waiter
@@ -19,7 +25,7 @@ class Waiter extends Component {
                         {
                             store.waiter_list.map((item,index)=>{
                                 return (
-                                    <li key={index} onClick={item=>this.waiter_detail()}>
+                                    <li key={index} onClick={()=>this.waiter_detail(item)}>
                                         <div className='waiter-item'>
                                             <img src={item.head} className='waiter-header'/>
                                             <p className='waiter-name'>{item.name}</p>

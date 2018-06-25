@@ -165,52 +165,52 @@ var initState = {
         waiter_list:[
             {
                 head:'http://cdn.ayi800.com/image/17934abb02a2257a8672b2ce820f5769.jpg',
-                name:'张应梅',age:'42',address:'湖北省',good:"7",
+                name:'张应梅',age:'42',address:'湖北省',good:"7",price:'15800元/26天',
                 tags:['月子餐','产后操','缠腹带']
             },
             {
                 head:'http://cdn.ayi800.com/image/3418a34f62664c29d518390552d321f9.jpg',
-                name:'高亚宁',age:'47',address:'甘肃省',good:"1",
+                name:'高亚宁',age:'47',address:'甘肃省',good:"1",price:'15800元/26天',
                 tags:['月子餐','营养配餐']
             },
             {
                 head:'http://cdn.ayi800.com/image/2e69e7eeb19c935bfdb24d942bf07213.jpg',
-                name:'侯灵珍',age:'39',address:'山西省',good:"5",
+                name:'侯灵珍',age:'39',address:'山西省',good:"5",price:'15800元/26天',
                 tags:['月子餐','产后操','缠腹带']
             },
             {
                 head:'http://cdn.ayi800.com/image/da3173870aff0db1a4c5fddaacc56fbf.jpg',
-                name:'王晶',age:'45',address:'黑龙江省',good:"2",
+                name:'王晶',age:'45',address:'黑龙江省',good:"2",price:'15800元/26天',
                 tags:['月子餐','产后操','缠腹带']
             },
             {
                 head:'http://cdn.ayi800.com/image/eec6fcc16759ccde11a005083000d58e.JPG',
-                name:'杨德兰',age:'47',address:'河北省',good:"12",
+                name:'杨德兰',age:'47',address:'河北省',good:"12",price:'15800元/26天',
                 tags:['月子餐','催乳通乳']
             },
             {
                 head:'http://cdn.ayi800.com/image/683ec75b06cffe3845f6c6d90f936df7.jpg',
-                name:'王卫华',age:'48',address:'河北省',good:"12",
+                name:'王卫华',age:'48',address:'河北省',good:"12",price:'15800元/26天',
                 tags:['月子餐','产后操','催乳通乳']
             },
             {
                 head:'http://cdn.ayi800.com/image/d4866df2663deca133cc35f99c8778c1.jpg',
-                name:'张燕丽',age:'41',address:'山西省',good:"2",
+                name:'张燕丽',age:'41',address:'山西省',good:"2",price:'15800元/26天',
                 tags:['月子餐','产后操','缠腹带']
             },
             {
                 head:'http://cdn.ayi800.com/image/8be58ade8c885200f74bd95f0c73e5de.jpg',
-                name:'王建敏',age:'46',address:'河北省',good:"8",
+                name:'王建敏',age:'46',address:'河北省',good:"8",price:'15800元/26天',
                 tags:['月子餐','催乳通乳']
             },
             {
                 head:'http://cdn.ayi800.com/image/485a4d1d1c0156d31c23f7fcf420cd15.jpg',
-                name:'纪晓月',age:'32',address:'辽宁省',good:"5",
+                name:'纪晓月',age:'32',address:'辽宁省',good:"5",price:'15800元/26天',
                 tags:['儿歌歌神','手巧','沟通能力强']
             },
             {
                 head:'http://cdn.ayi800.com/image/1aedf6b47bda6cccda6602c4fd2de4b5.jpg',
-                name:'陈月灵',age:'47',address:'安徽省',good:"2",
+                name:'陈月灵',age:'47',address:'安徽省',good:"2",price:'15800元/26天',
                 tags:['月子餐','产后操','缠腹带']
             },
         ]

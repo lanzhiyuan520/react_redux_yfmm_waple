@@ -7,7 +7,7 @@ import Consult from '../consult/consult'
 import { Toast } from 'antd-mobile';
 class Waiterdetail extends Component {
     componentDidMount(){
-
+        console.log(this.props)
     }
     render() {
         var data = this.props.location.data
@@ -22,7 +22,7 @@ class Waiterdetail extends Component {
                         <div className='info'>
                             <p className='waiter-user-name'>{data.name}</p>
                             <p className='waiter-user-price'>{data.price}</p>
-                            <p className='waiter-user-address'>{data.age?'':'47岁'} 来自{data.address?'':'山东省'}</p>
+                            <p className='waiter-user-address'>{data.age?data.age+'岁':'47岁'} 来自{data.address?data.address:'山东省'}</p>
                         </div>
                     </div>
                     <div className='introduction'>
